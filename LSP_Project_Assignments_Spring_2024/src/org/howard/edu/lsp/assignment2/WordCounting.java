@@ -15,6 +15,7 @@ public class WordCounting {
 		File file = new File("src/org/howard/edu/lsp/assignment2/words.txt");
 		Scanner scanner = new Scanner(file);
 		Map<String, Integer> wordCountMap = new HashMap<> ();
+	
 		
 		while (scanner.hasNext()) {
 			String line = scanner.nextLine();
