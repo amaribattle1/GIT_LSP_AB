@@ -157,13 +157,14 @@ public class IntegerSet {
      */
     public void complement(IntegerSet intSetb) {
         ArrayList<Integer> complement = new ArrayList<>();
-        for (int i = Integer.MIN_VALUE; i <= Integer.MAX_VALUE; i++) {
-            if (!set.contains(i) && !intSetb.set.contains(i)) {
+        for (int i : intSetb.set) {
+            if (!set.contains(i)) {
                 complement.add(i);
             }
         }
         set = complement;
     }
+
 
     /**
      * Checks if the set is empty.
