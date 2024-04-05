@@ -3,7 +3,6 @@ package org.howard.edu.lsp.assignment5;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -19,6 +18,7 @@ public class IntegerSetTest {
     }
     
     @Test
+    @DisplayName("Test case for clear")
     public void testClear() {
         setA.add(1);
         setA.clear();
@@ -26,6 +26,7 @@ public class IntegerSetTest {
     }
     
     @Test
+    @DisplayName("Test case for length")
     public void testLength() {
         setA.add(1);
         setA.add(2);
@@ -33,6 +34,7 @@ public class IntegerSetTest {
     }
     
     @Test
+    @DisplayName("Test case for equals")
     public void testEquals() {
         setA.add(1);
         setA.add(2);
@@ -44,12 +46,14 @@ public class IntegerSetTest {
     }
     
     @Test
+    @DisplayName("Test case for contains")
     public void testContains() {
         setA.add(1);
         assertTrue(setA.contains(1));
     }
     
     @Test
+    @DisplayName("Test case for largest")
     public void testLargest() {
         setA.add(1);
         setA.add(5);
@@ -58,6 +62,7 @@ public class IntegerSetTest {
     }
     
     @Test
+    @DisplayName("Test case for smallest")
     public void testSmallest() {
         setA.add(1);
         setA.add(5);
@@ -66,12 +71,14 @@ public class IntegerSetTest {
     }
     
     @Test
+    @DisplayName("Test case for add")
     public void testAdd() {
         setA.add(1);
         assertTrue(setA.contains(1));
     }
     
     @Test
+    @DisplayName("Test case for remove")
     public void testRemove() {
         setA.add(1);
         setA.remove(1);
@@ -79,6 +86,7 @@ public class IntegerSetTest {
     }
     
     @Test
+    @DisplayName("Test case for union")
     public void testUnion() {
         setA.add(1);
         setB.add(2);
@@ -87,6 +95,7 @@ public class IntegerSetTest {
     }
     
     @Test
+    @DisplayName("Test case for intersection")
     public void testIntersect() {
         setA.add(1);
         setA.add(2);
@@ -97,6 +106,7 @@ public class IntegerSetTest {
     }
     
     @Test
+    @DisplayName("Test case for difference")
     public void testDiff() {
         setA.add(1);
         setA.add(2);
@@ -107,6 +117,7 @@ public class IntegerSetTest {
     }
     
     @Test
+    @DisplayName("Test case for complement")
     public void testComplement() {
         setA.add(1);
         setA.add(2);
@@ -117,11 +128,13 @@ public class IntegerSetTest {
     }
     
     @Test
+    @DisplayName("Test case for isEmpty")
     public void testIsEmpty() {
         assertTrue(setA.isEmpty());
     }
     
     @Test
+    @DisplayName("Test case for toString")
     public void testToString() {
         setA.add(1);
         setA.add(2);
